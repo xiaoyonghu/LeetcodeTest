@@ -14,13 +14,14 @@ public class MapSortExample {
      * 建立最大堆
      * @param args
      */
-    private PriorityQueue<Integer> Max_Dump=new PriorityQueue<>((o1, o2)->(o2-01));
+    private PriorityQueue<Integer> Max_Dump=new PriorityQueue<>((o1, o2)->(o2-o1));
 
     /**
      * 建立最小堆
      * @param args
      */
     private PriorityQueue<Integer> Min_Dump=new PriorityQueue<>();
+
 
     private HashMap<String,Integer> phone=new HashMap<>(10);
     /**
