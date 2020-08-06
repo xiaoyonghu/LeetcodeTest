@@ -4,7 +4,7 @@ package com.huster.leetcode.Leetcode;
  * @author Created by Divo
  * @date 2020/7/26
  * Description:最长回文子串
- * Status:new
+ * Status:finished
  */
 public class Exam5 {
     public String longestPalindrome(String s) {
