@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * @author Created by Divo
  * @date 2020/7/25
- * Description:最长上升子序列 lc 300
+ * Description:最长上升子序列 Exam94 300
  * Status:finished  动态规划
  */
 public class Exam300 {

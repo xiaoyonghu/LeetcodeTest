@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author Created by Divo
  * @date 2020/7/22
- * Description：lc 120  三角形最小路径和
+ * Description：Exam94 120  三角形最小路径和
  * Status:finished
  */
 public class Exam120 {

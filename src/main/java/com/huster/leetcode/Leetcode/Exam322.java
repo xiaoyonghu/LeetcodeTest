@@ -3,7 +3,7 @@ package com.huster.leetcode.Leetcode;
 /**
  * @author Created by Divo
  * @date 2020/8/3
- * Description:lc 322 零钱兑换  类似爬台阶，只不过有一个条件判断而已
+ * Description:Exam94 322 零钱兑换  类似爬台阶，只不过有一个条件判断而已
  * Thought：
  *      1、暴力
  *      2、优化的贪心

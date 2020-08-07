@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author Created by Divo
  * @date 2020/8/5
- * Description:lc 15 三数之和
+ * Description:Exam94 15 三数之和
  * Status:finished
  */
 public class Exam15 {

@@ -3,7 +3,7 @@ package com.huster.leetcode.Leetcode;
 /**
  * @author Created by Divo
  * @date 2020/8/3
- * Description:lc 121 买卖股票的最佳时机 K=1
+ * Description:Exam94 121 买卖股票的最佳时机 K=1
  * Status:finished
  */
 public class Exam121 {

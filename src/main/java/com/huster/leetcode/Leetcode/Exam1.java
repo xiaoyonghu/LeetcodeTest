@@ -5,7 +5,7 @@ import java.util.HashMap;
 /**
  * @author Created by Divo
  * @date 2020/8/5
- * Description:lc 1 2数之和的问题
+ * Description:Exam94 1 2数之和的问题
  * Status:finished
  */
 public class Exam1 {

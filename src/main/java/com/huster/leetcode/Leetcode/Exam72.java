@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * @author Created by Divo
  * @date 2020/8/3
- * Description:lc 72 编辑距离
+ * Description:Exam94 72 编辑距离
  * Thought：采用dp来解决
  * Status:finished
  */

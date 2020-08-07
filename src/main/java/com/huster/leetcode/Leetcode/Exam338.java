@@ -3,7 +3,7 @@ package com.huster.leetcode.Leetcode;
 /**
  * @author Created by Divo
  * @date 2020/8/4
- * Description:lc 338 比特位数
+ * Description:Exam94 338 比特位数
  * Status:finished
  */
 public class Exam338 {

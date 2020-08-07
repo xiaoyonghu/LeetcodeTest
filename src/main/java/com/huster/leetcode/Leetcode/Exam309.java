@@ -3,7 +3,7 @@ package com.huster.leetcode.Leetcode;
 /**
  * @author Created by Divo
  * @date 2020/8/3
- * Description: lc 309 最佳买卖股票时机含冷冻期（只需要额外的一维即可） 但是K=1
+ * Description: Exam94 309 最佳买卖股票时机含冷冻期（只需要额外的一维即可） 但是K=1
  * Status:finished
  */
 public class Exam309 {

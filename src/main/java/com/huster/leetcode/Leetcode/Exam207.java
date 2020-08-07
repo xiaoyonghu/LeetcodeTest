@@ -8,7 +8,7 @@ import java.util.Queue;
 /**
  * @author Created by Divo
  * @date 2020/8/4
- * Description: lc 207 课程表
+ * Description: Exam94 207 课程表
  * Thought：邻接表表示法  BFS,DFS
  * Status:finished
  */

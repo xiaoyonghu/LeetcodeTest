@@ -3,7 +3,7 @@ package com.huster.leetcode.utils;
 /**
  * @author Created by Divo
  * @date 2020/8/4
- * Description:lc 208 前缀树的构造
+ * Description:Exam94 208 前缀树的构造
  * Status:finished
  */
 public class Trie {

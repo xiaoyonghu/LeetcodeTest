@@ -3,7 +3,7 @@ package com.huster.leetcode.Leetcode;
 /**
  * @author Created by Divo
  * @date 2020/8/5
- * Description:lc 198 打家劫舍I
+ * Description:Exam94 198 打家劫舍I
  *   DP思想
  * Status:finished
  */

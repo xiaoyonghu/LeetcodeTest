@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author Created by Divo
  * @date 2020/8/4
- * Description:lc 212 单词搜索
+ * Description:Exam94 212 单词搜索
  * Status:new
  */
 public class Exam212 {

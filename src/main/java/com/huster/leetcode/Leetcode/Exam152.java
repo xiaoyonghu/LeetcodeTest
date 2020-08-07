@@ -3,7 +3,7 @@ package com.huster.leetcode.Leetcode;
 /**
  * @author Created by Divo
  * @date 2020/8/3
- * Description: lc 152乘积最大子数组
+ * Description: Exam94 152乘积最大子数组
  * Thought：典型的DP
  * Status:new
  */
