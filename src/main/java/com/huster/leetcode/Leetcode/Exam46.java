@@ -33,8 +33,8 @@ public class Exam46 {
         for (int i = 0; i < nums.length; i++) {
             if (visited[i] == 1)
                 continue;
-            visited[i] = 1;
             //做选择
+            visited[i] = 1;
             track.add(nums[i]);
             //进入下一层
             backtrack(nums, track, visited);
