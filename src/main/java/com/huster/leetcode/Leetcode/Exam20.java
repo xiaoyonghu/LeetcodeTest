@@ -8,7 +8,7 @@ import java.util.Stack;
  * @author Created by Divo
  * @date 2020/4/9
  * Description:有效的括号 leetcode 第20题
- * Status:new
+ * Status:finished
  */
 public class Exam20 {
 
