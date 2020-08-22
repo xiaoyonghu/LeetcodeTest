@@ -1,4 +1,4 @@
-package com.huster.leetcode.springHireExam.Bilibili;
+package com.huster.leetcode.fallHireExam.Bilibili;
 
 import java.util.Scanner;
 

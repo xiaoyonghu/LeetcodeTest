@@ -1,4 +1,4 @@
-package com.huster.leetcode.springHireExam;
+package com.huster.leetcode.fallHireExam;
 
 /**
  * @author Created by Divo
