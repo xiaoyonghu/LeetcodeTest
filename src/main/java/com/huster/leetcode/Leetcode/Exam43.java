@@ -4,8 +4,8 @@ package com.huster.leetcode.Leetcode;
  * @author Created by Divo
  * @date 2020/8/13
  * Description:lc 43 字符串相乘
- * 这个题目难搞哦
- * 我得思维还是不行，太磨叽了,采用递归式的算法
+ *  这个题目难搞哦
+ *  我得思维还是不行，太磨叽了,采用递归式的算法
  * Status:finished
  */
 public class Exam43 {
