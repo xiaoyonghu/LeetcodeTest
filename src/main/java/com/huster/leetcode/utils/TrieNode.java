@@ -4,7 +4,7 @@ package com.huster.leetcode.utils;
  * @author Created by Divo
  * @date 2020/8/4
  * Description:用于构造前缀树
- * Status:new
+ * Status:finished
  */
 public class TrieNode {
     public char val;
