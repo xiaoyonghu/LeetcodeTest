@@ -45,62 +45,63 @@ public class Exam5 {
      }
      */
 
+
     /**
      * @param s
      * @return 方法二 采用dp
-     * public String longestPalindrome(String s) {
-     * int len = s.length();
-     * if (len < 2) {
-     * return s;
-     * }
-     * <p>
-     * boolean[][] dp = new boolean[len][len];
-     * for (int i = 0; i < len; i++) {
-     * Arrays.fill(dp[i], false);
-     * }
-     * <p>
-     * // 初始化
-     * for (int i = 0; i < len; i++) {
-     * dp[i][i] = true;
-     * }
-     * <p>
-     * <p>
-     * char[] charArray = s.toCharArray();
-     * int maxLen = 1;
-     * int start = 0;
-     * <p>
-     * //时间复杂度为O(N*2)
-     * for (int j = 1; j < len; j++) {
-     * // 只有下面这一行和「参考代码 2」不同，i 正着写、倒过来写都行，因为子串都有参考值
-     * for (int i = j - 1; i >= 0; i--) {
-     * <p>
-     * if (charArray[i] == charArray[j]) {
-     * //里面的子串长度小于2了 除了i,j节点(i,j).length()<2
-     * if (j - i < 3) {
-     * dp[i][j] = true;
-     * } else {
-     * //里面的子串长度大于等于2
-     * //状态转移方程，等于去掉首尾
-     * dp[i][j] = dp[i + 1][j - 1];
-     * }
-     * } else {
-     * //首尾不等，直接GG
-     * dp[i][j] = false;
-     * }
-     * <p>
-     * // 只要 dp[i][j] == true 成立，就表示子串 s[i, j] 是回文，此时记录回文长度和起始位置
-     * if (dp[i][j]) {
-     * int curLen = j - i + 1;
-     * if (curLen > maxLen) {
-     * maxLen = curLen;
-     * start = i;
-     * }
-     * }
-     * }
-     * }
-     * return s.substring(start, start + maxLen);
-     * }
      */
+    public String longestPalindrome1(String s) {
+        int len = s.length();
+        if (len < 2) {
+            return s;
+        }
+
+        boolean[][] dp = new boolean[len][len];
+//        for (int i = 0; i < len; i++) {
+//            Arrays.fill(dp[i], false);
+//        }
+
+        // 初始化
+        for (int i = 0; i < len; i++) {
+            dp[i][i] = true;
+        }
+
+        char[] charArray = s.toCharArray();
+        int maxLen = 1;
+        int start = 0;
+
+        //时间复杂度为O(N*2)
+        for (int j = 1; j < len; j++) {
+            // 只有下面这一行和「参考代码 2」不同，i 正着写、倒过来写都行，因为子串都有参考值
+            for (int i = j - 1; i >= 0; i--) {
+
+                if (charArray[i] == charArray[j]) {
+                    //里面的子串长度小于2了 除了i,j节点(i,j).length()<2
+                    if (j - i < 3) {
+                        dp[i][j] = true;
+                    } else {
+                        //里面的子串长度大于等于2
+                        //状态转移方程，等于去掉首尾
+                        dp[i][j] = dp[i + 1][j - 1];
+                    }
+                } else {
+                    //首尾不等，直接GG
+                    dp[i][j] = false;
+                }
+
+                // 只要 dp[i][j] == true 成立，就表示子串 s[i, j] 是回文，此时记录回文长度和起始位置
+                if (dp[i][j]) {
+                    int curLen = j - i + 1;
+                    if (curLen > maxLen) {
+                        maxLen = curLen;
+                        start = i;
+                    }
+                }
+            }
+        }
+        return s.substring(start, start + maxLen);
+    }
+
 
     /**
      * 解法3 采用Manacher算法  看的我吐了、
