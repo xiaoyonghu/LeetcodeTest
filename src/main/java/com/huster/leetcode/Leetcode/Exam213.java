@@ -19,7 +19,7 @@ public class Exam213 {
     public int dp(int[] nums,int start,int end) {
         int dp_1 = 0, dp_2 = 0,dpMax = 0;
         for (int i = end; i >=start; i--) {
-            //不抢   抢
+                            //不抢   抢
             dpMax = Math.max(dp_1,nums[i]+dp_2);
             dp_2 = dp_1;
             dp_1 = dpMax;
