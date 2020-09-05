@@ -1,4 +1,4 @@
-package com.huster.leetcode.PartitionFour;
+package com.huster.leetcode.SwordToOffer.PartitionFour;
 
 /**
  * @author Created by Divo

@@ -1,4 +1,4 @@
-package com.huster.leetcode.PartitionOne;
+package com.huster.leetcode.SwordToOffer.PartitionOne;
 
 import com.huster.leetcode.utils.TreeNode;
 

@@ -1,4 +1,4 @@
-package com.huster.leetcode.PartitionOne;
+package com.huster.leetcode.SwordToOffer.PartitionOne;
 
 import java.util.ArrayList;
 

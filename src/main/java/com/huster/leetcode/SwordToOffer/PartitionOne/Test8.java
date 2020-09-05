@@ -1,9 +1,6 @@
-package com.huster.leetcode.PartitionOne;
+package com.huster.leetcode.SwordToOffer.PartitionOne;
 
 import com.huster.leetcode.common.TreeLinkNode;
-
-import java.util.Collections;
-import java.util.List;
 
 /**
  * @author Created by Divo

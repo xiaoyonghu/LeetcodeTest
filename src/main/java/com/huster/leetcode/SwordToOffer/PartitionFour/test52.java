@@ -1,4 +1,4 @@
-package com.huster.leetcode.PartitionFour;
+package com.huster.leetcode.SwordToOffer.PartitionFour;
 
 import com.huster.leetcode.utils.ListNode;
 

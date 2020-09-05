@@ -1,10 +1,10 @@
-package com.huster.leetcode.qianxin;
+package com.huster.leetcode.fallHireExam.qianxin;
 
 /**
  * @author Created by Divo
  * @date 2020/9/2
  * Description: 分房子
- * Status:new
+ * Status:finished
  */
 public class Exam002 {
     public static int numWays(int[] nums) {

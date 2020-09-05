@@ -1,4 +1,4 @@
-package com.huster.leetcode.qianxin;
+package com.huster.leetcode.fallHireExam.qianxin;
 
 /**
  * @author Created by Divo
@@ -21,5 +21,4 @@ public class Exam001 {
         }
         return dp[n];
     }
-
 }
