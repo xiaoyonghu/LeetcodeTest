@@ -1,7 +1,5 @@
 package com.huster.leetcode.utils;
 
-import org.apache.logging.log4j.util.Chars;
-
 import java.util.*;
 
 /**
@@ -12,14 +10,18 @@ import java.util.*;
  */
 public class InOutTest {
 
+    /**
+     * nextInt 可以以 空格符 为条件
+     * next 空格 或者 换行符 为条件
+     * nextLine 换行符 为条件
+     */
     //nextInt():用于只读取整型数据，读入空白或空白字符，会跳过，以换行符'\n'结束输入，不包含换行符
     //nextLine():读取整行，包括换行符
     //next()：读取单个单词，以空格作为分隔符
 
-
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
 //        int n=sc.nextInt();
 //
 //        for (int i = 0; i < n; i++) {
@@ -27,6 +29,7 @@ public class InOutTest {
 //            int b=sc.nextInt();
 //            System.out.println("a+b= " +(a+b));
 //        }
+
 
 //        for (;;) {
 //            int a=sc.nextInt();
