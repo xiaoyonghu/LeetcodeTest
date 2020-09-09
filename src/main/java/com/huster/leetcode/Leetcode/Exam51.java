@@ -69,6 +69,7 @@ public class Exam51 {
         }
     }
 
+    //直接Return True
     private boolean isValid(char[][] board, int row, int col) {
         int N = board.length;
 

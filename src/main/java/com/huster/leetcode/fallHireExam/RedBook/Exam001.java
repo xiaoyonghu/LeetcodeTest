@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * @author Created by Divo
  * @date 2020/8/30
- * Description:
+ * Description: 做的是分段和分句子
  * Status:未做出来
  */
 public  class Exam001 {

@@ -30,7 +30,7 @@ public class Exam679 {
         if (list.size() == 1)
             return Math.abs(list.get(0) - TARGET) < EPSILON;
 
-        //2 在所有的列表进性选择
+        //2 在所有的列表进行选择
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list.size(); j++) {
                 if (i != j) {

@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * @author Created by Divo
  * @date 2020/9/5
- * Description:需要使用Double
+ * Description:需要使用Double，放置房子
  * Status:finished
  */
 public class souGou002 {
