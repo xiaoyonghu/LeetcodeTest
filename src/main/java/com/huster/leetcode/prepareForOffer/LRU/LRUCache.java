@@ -1,4 +1,4 @@
-package com.huster.leetcode.fallHireExam.LRU;
+package com.huster.leetcode.prepareForOffer.LRU;
 
 import java.util.LinkedHashMap;
 
@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
  * @date 2020/9/4
  * Description:lc 146 LRU 缓存机制
  * Status:finished
- * see more detail in <href>https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/lru-suan-fa<href/>
+ * Extra:see more detail in <href>https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/lru-suan-fa<href/>
  */
 public class LRUCache {
     //实例上面是Integer，Integer

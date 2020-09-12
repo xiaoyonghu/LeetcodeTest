@@ -8,6 +8,7 @@ import java.util.Scanner;
  * @author Created by Divo
  * @date 2020/9/7
  * Description:涂颜色
+ * AC:0 超时
  * Status:unfinished
  */
 public class shanbei003 {
@@ -19,6 +20,9 @@ public class shanbei003 {
         return count;
     }
 
+    /**
+     * start参数没用上
+     */
     private static void backTrack(int[][] arr, LinkedList<Integer> track, int start, int n, int m) {
         if (track.size() == n) {
             count++;

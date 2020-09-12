@@ -8,8 +8,8 @@ import java.util.Scanner;
 /**
  * @author Created by Divo
  * @date 2020/9/6
- * Description:To Do
- * Status:new
+ * Description:得到中位数
+ * Status:finished
  */
 public class tencent004 {
     public static List<Integer> getDel(int[] arr, int n) {

@@ -30,9 +30,9 @@ public class Exam79 {
         }
         if (start >= len)
             return false;
+
         if (start == (len - 1))
             return board[i][j] == word.charAt(start);
-
 
         if (word.charAt(start) == board[i][j]) {
             //只有相等的时候才改状态
