@@ -40,8 +40,6 @@ public class vivo001 {
                 }
             }
         }
-
-
     }
 
     private static boolean isValid(int row, int col, int n) {
