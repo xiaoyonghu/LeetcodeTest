@@ -9,5 +9,8 @@ package com.huster.leetcode.fallHireExam.huaWei;
  * Status:TODO
  */
 public class huaWei003 {
+    public static int  getMaxYiHuo(){
+        return 0;
+    }
 
 }
