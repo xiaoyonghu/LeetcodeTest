@@ -20,5 +20,14 @@ public class Exam007 {
             start = end;
         }
         return n / split;
+
+
+    }
+    public boolean isOdd(int a){
+        if ((a & 1) == 1){
+            return false;
+        }else {
+            return true;
+        }
     }
 }

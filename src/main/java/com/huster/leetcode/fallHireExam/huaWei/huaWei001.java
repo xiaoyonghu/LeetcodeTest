@@ -5,7 +5,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-/**
+/**+
+ *
  * @author Created by Divo
  * @date 2020/9/9
  * Description:玩具的完美排列  KMP算法找字符串
@@ -13,7 +14,6 @@ import java.util.Scanner;
  */
 public class huaWei001 {
     public static int getPerfectToysIndex(List<Integer> conceptFor,List<Integer> conceptList,List<Integer> valueFor,List<Integer> valueList){
-        //indexOfSubList底层使用KMP算法
         int conceptFirstIndex = Collections.indexOfSubList(conceptList,conceptFor);
         if (conceptFirstIndex == -1)
             return 0;
