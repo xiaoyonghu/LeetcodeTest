@@ -1,9 +1,9 @@
-package com.huster.leetcode.fallHireExam;
+package com.huster.leetcode.fallHireExam.meiTuan;
 
 /**
  * @author Created by Divo
  * @date 2020/9/22
- * Description:To Do
+ * Description: lc 54 以AC
  * Status:new
  */
 public class test {

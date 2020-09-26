@@ -1,4 +1,4 @@
-package com.huster.leetcode.meiTuan;
+package com.huster.leetcode.fallHireExam.meiTuan;
 
 /**
  * @author Created by Divo

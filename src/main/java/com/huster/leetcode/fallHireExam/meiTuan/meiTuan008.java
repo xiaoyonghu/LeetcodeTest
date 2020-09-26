@@ -1,8 +1,6 @@
-package com.huster.leetcode.meiTuan;
+package com.huster.leetcode.fallHireExam.meiTuan;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Scanner;
 
 /**

@@ -1,4 +1,4 @@
-package com.huster.leetcode.meiTuan;
+package com.huster.leetcode.fallHireExam.meiTuan;
 
 import java.util.Arrays;
 import java.util.Scanner;
