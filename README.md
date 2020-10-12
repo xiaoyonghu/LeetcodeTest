@@ -44,11 +44,7 @@
 
 51、[数组中的逆序对]()
 
-
-
-
-
-------
+---
 
 ### Leetcode部分
 
@@ -112,9 +108,6 @@ BFS-DFS [lc 133 克隆图][https://leetcode-cn.com/problems/clone-graph/]  采�
 
 [lc 309 最佳买卖股票时机含冷冻期（只需要额外的一维即可） 但是K=1][https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/]
 
-[][]
-
-[][]
 
 [lc 322 零钱兑换  类似爬台阶][https://leetcode-cn.com/problems/coin-change/submissions/]
 
@@ -223,81 +216,6 @@ BFS-DFS [lc 133 克隆图][https://leetcode-cn.com/problems/clone-graph/]  采�
 [lc 43 字符串相乘][https://leetcode-cn.com/problems/multiply-strings/] 这题目真是耗费我的时间
 
 [lc 146  LRU][https://leetcode-cn.com/problems/lru-cache/submissions/]
-
-
-
-
-
-### 面试题
-
-#### YY
-
-8.31 笔试
-
-题型：
-
-20道选择题
-
-1道编程题（水仙花数）
-
-Sql语句编写题
-
-
-
-#### B站
-
-lc 679 24点游戏
-
-**9.4** 选择题 30个 全部操作系统、Linux、计算机网络
-
-编程题3个：
-
-1、0.1组成的字符串替换（0->1）K次得到最大的字符串长度（使用的回溯）
-
-2、键指offer原题 顺时针选择打印二位数组
-
-3、对其中最长的片段求平均字段（有歧义）[CSDN上别人的题目][https://blog.csdn.net/weixin_41896265/article/details/108411419]
-
-
-
-#### 百度
-
-**9.3** 选择题20个 
-
-编程题3个：
-
-1、牛牛卡片  5，0组成的卡片，被90整除的最大数
-
-2、未知
-
-3、爬楼梯问题 走的步数不能和前2步的一样  （直接套模板-回溯） （牛友写了高级的dp，最外层 需要几个变量就需要递归几次）
-
-
-
-#### 搜狗
-
-**9.5**
-
-1、换 a b c换奖品   
-
-2、建房子
-
-3、密码问题  
-
-
-
-#### 腾讯
-
-**9.6**
-
-5题编程题
-
-**TODO**
-
-
-
-**贝壳**
-
 
 
 
@@ -773,14 +691,7 @@ KMP算法
 
 ```
 Rabin-Karp 编码
-
-
-
-
 ```
-
-
-
 
 
 ##### LIS问题
