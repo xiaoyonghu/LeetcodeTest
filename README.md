@@ -24,7 +24,7 @@
 
    - 思想：主要的是看如何选择前序和中序的点，很简单
 
-   ​           
+             
 
 #### PartitionFour
 
@@ -50,27 +50,27 @@
 
 ##### **链表**
 
-[lc 108 将有序数组转换为二叉搜索树][https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/] 二叉搜索
+[lc 108 将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)二叉搜索
 
-[lc 109 有序链表转换二叉搜索树][https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/] 二叉搜索、快慢指针
+[lc 109 有序链表转换二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/) 二叉搜索、快慢指针
 
 
 
 ##### **字符串**
 
-[lc 647 回文子串][https://leetcode-cn.com/problems/palindromic-substrings/]
+[lc 647 回文子串](https://leetcode-cn.com/problems/palindromic-substrings/)
 
 [lc 214 最短回文串](https://leetcode-cn.com/problems/shortest-palindrome/) KMP Manacher 难受
 
-[lc 557 反转字符串中的单词III][https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/]
+[lc 557 反转字符串中的单词III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/)
 
-[lc 491 最长上升子序列][https://leetcode-cn.com/problems/increasing-subsequences/]  回溯    Rabin-Karp编码
+[lc 491 最长上升子序列](https://leetcode-cn.com/problems/increasing-subsequences/)  回溯    Rabin-Karp编码
 
 
 
 ##### **堆**
 
-[lc 239 滑动窗口问题][https://leetcode.com/problems/sliding-window-maximum/] 1、堆  2、二分查找
+[lc 239 滑动窗口问题](https://leetcode.com/problems/sliding-window-maximum/) 1、堆  2、二分查找
 
 
 
@@ -82,40 +82,40 @@
 
 ##### **DFS/BFS**
 
-DFS-BFS  [lc 200--岛屿问题][https://leetcode-cn.com/problems/number-of-islands/]   并查集也可以解决
+DFS-BFS  [lc 200--岛屿问题](https://leetcode-cn.com/problems/number-of-islands/)   并查集也可以解决
 
-BFS-DFS  [lc 207 课程表][https://leetcode-cn.com/problems/course-schedule/solution/course-schedule-tuo-bu-pai-xu-bfsdfsliang-chong-fa/]  邻接表问题   **拓扑排序** 判断此课程安排图是否是 **有向无环图(DAG)** 
+BFS-DFS  [lc 207 课程表](https://leetcode-cn.com/problems/course-schedule/solution/course-schedule-tuo-bu-pai-xu-bfsdfsliang-chong-fa/)  邻接表问题   **拓扑排序** 判断此课程安排图是否是 **有向无环图(DAG)** 
 
-BFS-DFS [lc 133 克隆图][https://leetcode-cn.com/problems/clone-graph/]  采用BFS做的
+BFS-DFS [lc 133 克隆图](https://leetcode-cn.com/problems/clone-graph/)  采用BFS做的
 
 
 
 ##### **DP**
 
-[lc 5 最长回文子串][https://leetcode-cn.com/problems/longest-palindromic-substring/]  dp、中心扩散（变体）、Manacher
+[lc 5 最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/)  dp、中心扩散（变体）、Manacher
 
-[lc 72 编辑距离][https://leetcode-cn.com/problems/edit-distance/solution/zi-di-xiang-shang-he-zi-ding-xiang-xia-by-powcai-3/]
+[lc 72 编辑距离](https://leetcode-cn.com/problems/edit-distance/solution/zi-di-xiang-shang-he-zi-ding-xiang-xia-by-powcai-3/)
 
-[lc 120  三角形最小路径和][https://leetcode-cn.com/problems/triangle/]
+[lc 120  三角形最小路径和](https://leetcode-cn.com/problems/triangle/)
 
 [lc 300  最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/submissions/)  1、dp  2、二分查找
 
-[lc 354 俄罗斯套娃信封问题][https://leetcode-cn.com/problems/russian-doll-envelopes/submissions/]
+[lc 354 俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/submissions/)
 
 [lc 152  乘积最大子数组 ](https://leetcode-cn.com/problems/maximum-product-subarray/submissions/)
 
-[lc 121 K为一次的股票买卖][https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/submissions/] 非DP解法
+[lc 121 K为一次的股票买卖](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/submissions/) 非DP解法
 
-[lc 309 最佳买卖股票时机含冷冻期（只需要额外的一维即可） 但是K=1][https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/]
+[lc 309 最佳买卖股票时机含冷冻期（只需要额外的一维即可） 但是K=1](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/)
 
 
-[lc 322 零钱兑换  类似爬台阶][https://leetcode-cn.com/problems/coin-change/submissions/]
+[lc 322 零钱兑换  类似爬台阶](https://leetcode-cn.com/problems/coin-change/submissions/)
 
-[lc 337 打家劫舍III][https://leetcode-cn.com/submissions/detail/95025063/] DP思想
+[lc 337 打家劫舍III](https://leetcode-cn.com/submissions/detail/95025063/) DP思想
 
-[lc 198 打家劫舍 I][https://leetcode-cn.com/problems/house-robber/submissions/]  DP
+[lc 198 打家劫舍 I](https://leetcode-cn.com/problems/house-robber/submissions/)  DP
 
-[lc 213 打家劫舍II][https://leetcode-cn.com/problems/house-robber-ii/submissions/] 环形数组
+[lc 213 打家劫舍II](https://leetcode-cn.com/problems/house-robber-ii/submissions/) 环形数组
 
 
 
