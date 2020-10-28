@@ -14,7 +14,7 @@ public class redBook002 {
     static int res = 0;
 
     static int solution(String s) {
-        res = Math.min(solution1(s),solution2(s));
+        res = Math.min(solution1(s), solution2(s));
         return res;
     }
 
@@ -31,7 +31,7 @@ public class redBook002 {
     }
     static int solution2(String s) {
         StringBuilder sb = new StringBuilder();
-        for (int i = s.length()-1; i >= 0 ; i--) {
+        for (int i = s.length() - 1; i >= 0; i--) {
             sb.append(s.charAt(i));
         }
         String s2 = sb.toString();
