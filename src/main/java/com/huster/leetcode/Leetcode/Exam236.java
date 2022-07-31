@@ -12,6 +12,7 @@ public class Exam236 {
     /**
      * 1、先序遍历，用一个队列记录下途中访问的节点，然后对2个数组进行取最近公共节点
      * 2、递归（思想比较巧妙）
+     * //主整体的思想就是判断他到底在不在
      */
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || root == p || root == q) return root;

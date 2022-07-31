@@ -6,7 +6,7 @@ import com.huster.leetcode.utils.ListNode;
  * @author Created by Divo
  * @date 2020/9/4
  * Description:24 翻转链表
- * Status:new
+ * Status:finished   需要多写
  */
 public class sto024 {
     public ListNode reverseList(ListNode head) {

@@ -121,13 +121,13 @@ BFS-DFS [lc 133 克隆图](https://leetcode-cn.com/problems/clone-graph/)  采�
 
 ##### **回溯**
 
-[lc 79 单词搜索][https://leetcode-cn.com/problems/word-search/] 写完可以去看一下212
+[lc 79 单词搜索](https://leetcode-cn.com/problems/word-search/) 写完可以去看一下212
 
-[lc 46 全排列][https://leetcode-cn.com/problems/permutations/submissions/]
+[lc 46 全排列](https://leetcode-cn.com/problems/permutations/submissions/)
 
-[lc 93 复原IP地址][https://leetcode-cn.com/problems/restore-ip-addresses/]
+[lc 93 复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses/)
 
-[lc 679 24点游戏][https://leetcode-cn.com/problems/24-game/]  这个是回溯的增强版
+[lc 679 24点游戏](https://leetcode-cn.com/problems/24-game/) 这个是回溯的增强版
 
 
 
@@ -135,15 +135,15 @@ BFS-DFS [lc 133 克隆图](https://leetcode-cn.com/problems/clone-graph/)  采�
 
 需要记住一些常规的位运算的操作
 
-[lc 338 比特位数][https://leetcode-cn.com/problems/counting-bits/] 动态规划的思想，讨论区的人才真是多
+[lc 338 比特位数](https://leetcode-cn.com/problems/counting-bits/) 动态规划的思想，讨论区的人才真是多
 
 
 
 ##### **字典树**
 
-[lc 212 单词搜索II][https://leetcode-cn.com/problems/word-search-ii/submissions/]  回溯 + 字典树
+[lc 212 单词搜索II](https://leetcode-cn.com/problems/word-search-ii/submissions/)  回溯 + 字典树
 
-[lc 336 回文对][https://leetcode-cn.com/problems/palindrome-pairs/submissions/]  字典树/Map  这个评论区的节点我看的想吐
+[lc 336 回文对](https://leetcode-cn.com/problems/palindrome-pairs/submissions/) 字典树/Map  这个评论区的节点我看的想吐
 
 
 
@@ -151,9 +151,9 @@ BFS-DFS [lc 133 克隆图](https://leetcode-cn.com/problems/clone-graph/)  采�
 
 ##### **树Tree**
 
-[lc 98 验证二叉搜索树][https://leetcode-cn.com/problems/validate-binary-search-tree/submissions/]
+[lc 98 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/submissions/)
 
-[lc 101 对称的二叉树][https://leetcode-cn.com/problems/symmetric-tree/submissions/]
+[lc 101 对称的二叉树](https://leetcode-cn.com/problems/symmetric-tree/submissions/)
 
 [lc 538 把二叉树搜索树转换为累加树][https://leetcode-cn.com/problems/convert-bst-to-greater-tree/] 变形的中序遍历
 

@@ -11,7 +11,7 @@ public class Singleton {
     private Singleton() {//private 访问级别的构造方法
     }
 
-    private static volatile Singleton singleton;    //使用volatile修饰，提供可见性,禁止指令重排，
+    private static volatile Singleton singleton;    // 使用volatile修饰，提供可见性,禁止指令重排，
                                                     // 保证getInstance返回的是初始化完全的对象
     public static Singleton getInstance() {
         if (singleton == null) {  //尽量避免进入重复块

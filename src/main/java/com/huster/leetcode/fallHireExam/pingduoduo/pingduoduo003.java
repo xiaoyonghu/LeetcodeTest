@@ -10,12 +10,16 @@ import java.util.HashMap;
  * Status:
  */
 public class pingduoduo003 {
+
+    //int i;  i可以不用显示的赋值
+
     public int getMax(String s){
         HashMap<Character, Integer> hashMap = new HashMap<>();
         HashMap<Integer, Integer> resMap = new HashMap<>();
-        int maxLen = 1;
+         int maxLen = 1;
         int len = s.length();
         int i = 0;
+        //final int i = 0;
         int j = 1;
         char c = s.charAt(0);
         resMap.put(0,1);
@@ -25,7 +29,7 @@ public class pingduoduo003 {
                 int length = j -i;
                 if (length > maxLen){
                    int target = hashMap.get(s.charAt(i));
-                   i = target +1;
+                   //i = target +1;
                    //resMap.put()
                 }else {
                     //Stack<Integer> stack = new Stack<>();

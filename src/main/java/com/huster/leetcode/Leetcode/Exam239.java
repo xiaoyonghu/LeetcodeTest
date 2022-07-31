@@ -36,7 +36,7 @@ public class Exam239 {
             }
             //deq contains index... result contains content
             deq.addLast(i);
-            if (i >=  k -1)
+            if (i >=  k -1)  //判断滑动窗口是否已经有K个了
                 result[i - k + 1] =nums[deq.getFirst()];
         }
         return result;
