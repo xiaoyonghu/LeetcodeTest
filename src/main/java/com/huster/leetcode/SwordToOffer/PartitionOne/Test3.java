@@ -1,5 +1,7 @@
 package com.huster.leetcode.SwordToOffer.PartitionOne;
 
+import java.util.HashSet;
+
 /**
  * @author Created by Divo
  * @date 2019/8/19
@@ -32,6 +34,43 @@ public class Test3 {
         int t = nums[i];
         nums[i] = nums[j];
         nums[j] = t;
+    }
+
+
+    // solve with HashSet
+    // 时间复杂度 O(N)
+    // 空间复杂度 O(N)
+    //
+//    public int findRepeatNumber(int[] nums) {
+//        HashSet<Integer> hSet = new HashSet<>();
+//        for (int i : nums){
+//            if (hSet.contains(i)){
+//                return i;
+//            }else {
+//                hSet.add(i);
+//            }
+//        }
+//        return -1;
+//    }
+
+    //solve with switch
+    // 时间复杂度 O(N)
+    // 空间复杂度 O（1）
+    public int findRepeatNumber(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
+        int i = 0;
+        while (i < nums.length) {
+            if (nums[i] == i) {
+                i++;
+                continue;
+            }
+            //索引为 nums[i]对应的位置上已经有值
+            if (nums[nums[i]] == nums[i]) return nums[i];
+            swap(nums, i, nums[i]);
+        }
+        return -1;
     }
 
     public static void main(String[] args) {
