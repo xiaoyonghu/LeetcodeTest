@@ -29,22 +29,22 @@ public class Exam20 {
         //System.out.println(IsValid("(]"));
     }
 
-    public static boolean IsValid(String s){
-        Stack<Character> stack=new Stack<>();
+    public static boolean IsValid(String s) {
+        Stack<Character> stack = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
-            char c=s.charAt(i);
-            if (c=='('||c=='{'|| c=='['){
+            char c = s.charAt(i);
+            if (c == '(' || c == '{' || c == '[') {
                 stack.push(c);
-            }else{
+            } else {
                 //此时为左括号
                 if (stack.isEmpty())
                     return false;
-                char top=stack.pop();
-                if (c == ')'&& top!='(')
+                char top = stack.pop();
+                if (c == ')' && top != '(')
                     return false;
-                if(c == ']' && top != '[')
+                if (c == ']' && top != '[')
                     return false;
-                if (c=='}'&& top!='{')
+                if (c == '}' && top != '{')
                     return false;
             }
         }
@@ -53,6 +53,7 @@ public class Exam20 {
 
     /**
      * 华为面试改版的题目
+     *  计数（小意思）
      */
     public static int N_Number(String s) {
         Stack<Character> stack1 = new Stack<>();
@@ -65,7 +66,6 @@ public class Exam20 {
                     stack1.push(c);
                 if (c == '[')
                     stack2.push(c);
-
             } else {
                 if (c == ')') {
                     if (stack1.size() > 0) {
