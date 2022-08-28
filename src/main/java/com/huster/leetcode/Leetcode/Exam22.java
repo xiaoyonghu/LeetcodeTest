@@ -10,6 +10,7 @@ import java.util.List;
  * Status:finished
  */
 public class Exam22 {
+
     public List<String> generateParenthesis(int n) {
         List<String> list = new ArrayList<>();
         gP(list, "", 0, 0, n);

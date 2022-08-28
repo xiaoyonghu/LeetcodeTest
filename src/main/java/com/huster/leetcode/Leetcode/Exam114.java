@@ -7,7 +7,7 @@ import com.huster.leetcode.utils.TreeNode;
  * @date 2020/8/6
  * Description:lc 114 二叉树展开为一个单链表
  * Status:finished
- *      讨论区的变形后序迭代方式没看懂
+ * 讨论区的变形后序迭代方式没看懂
  */
 public class Exam114 {
     /**

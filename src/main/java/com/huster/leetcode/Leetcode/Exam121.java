@@ -9,7 +9,7 @@ package com.huster.leetcode.Leetcode;
 public class Exam121 {
     public int maxProfit(int[] prices) {
         //遍历所有的，找到最大差值即可
-        if (prices.length == 0 || prices ==null)
+        if (prices.length == 0 || prices == null)
             return 0;
         int maxProfit = 0;
         int minPrice = Integer.MAX_VALUE;

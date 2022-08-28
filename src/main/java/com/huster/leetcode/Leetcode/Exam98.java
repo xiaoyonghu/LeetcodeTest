@@ -22,7 +22,7 @@ public class Exam98 {
             return true;
         if (min != null && root.val <= min.val) return false;
         if (max != null && root.val >= max.val) return false;
-                        //      root为左边的最大值              root为右子树的最小值
+        //      root为左边的最大值              root为右子树的最小值
         return isValidBST(root.left, min, root) && isValidBST(root.right, root, max);
     }
 }

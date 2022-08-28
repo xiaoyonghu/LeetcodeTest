@@ -4,8 +4,8 @@ package com.huster.leetcode.prepareForOffer;
  * @author Created by Divo
  * @date 2020/9/7
  * Description: == 与 equals 方法的测试
- *  == : 它的作用是判断两个对象的地址是不是相等。
- *       即，判断两个对象是不是同一个对象(基本数据类型==比较的是值，引用数据类型==比较的是内存地址)。
+ * == : 它的作用是判断两个对象的地址是不是相等。
+ * 即，判断两个对象是不是同一个对象(基本数据类型==比较的是值，引用数据类型==比较的是内存地址)。
  * Status:finished
  */
 public class equalsMethod {

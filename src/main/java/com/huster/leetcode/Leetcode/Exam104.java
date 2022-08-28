@@ -11,7 +11,7 @@ import com.huster.leetcode.utils.TreeNode;
 public class Exam104 {
     //典型的后序遍历问题
     public int maxDepth(TreeNode root) {
-        return root==null? 0 : Math.max(maxDepth(root.left),maxDepth(root.right)) + 1;
+        return root == null ? 0 : Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 
 //    private int getMaxDepth(TreeNode cur) {

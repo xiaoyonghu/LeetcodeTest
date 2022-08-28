@@ -7,6 +7,7 @@ package com.huster.leetcode.Leetcode;
  * Status:finished
  */
 public class Exam647 {
+
     int sum = 0;
 
     public int countSubstrings(String s) {

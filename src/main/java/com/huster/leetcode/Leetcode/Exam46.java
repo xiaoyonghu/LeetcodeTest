@@ -6,14 +6,13 @@ import java.util.*;
  * @author Created by Divo
  * @date 2020/8/8
  * Description:lc 46 全排列
- *          Thought:也可以参见lc官方给的例子，直接交换元素来实现
- *                  这里采用使用visited
+ * Thought:也可以参见lc官方给的例子，直接交换元素来实现
+ * 这里采用使用visited
  * Status:finished
  */
 public class Exam46 {
     /**
      * 回溯解法  时间复杂度高
-     *
      */
     List<List<Integer>> res = new ArrayList<>();
 
@@ -29,7 +28,6 @@ public class Exam46 {
         map.containsKey("");
         StringBuilder sb = new StringBuilder();
         sb.toString();
-
 
         return res;
     }

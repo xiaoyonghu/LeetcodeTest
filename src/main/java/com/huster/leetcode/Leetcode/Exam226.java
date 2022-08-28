@@ -19,6 +19,7 @@ public class Exam226 {
         root.right = left;
         return root;
     }
+
     public TreeNode invertTree1(TreeNode root) {
         //采用先序遍历的方式
         if (root == null)

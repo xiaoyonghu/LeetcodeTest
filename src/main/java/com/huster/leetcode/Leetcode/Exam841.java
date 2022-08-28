@@ -11,9 +11,9 @@ import java.util.Queue;
  * Status:new
  */
 public class Exam841 {
+
     boolean[] visited;
     int num;
-
 
     //解法一：DFS
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
@@ -59,6 +59,4 @@ public class Exam841 {
         }
         return num == n;
     }
-
-
 }

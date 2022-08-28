@@ -12,7 +12,6 @@ import java.util.Stack;
  */
 public class Exam20 {
 
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //ArrayList<Boolean> a = new ArrayList<>(10);
@@ -53,7 +52,7 @@ public class Exam20 {
 
     /**
      * 华为面试改版的题目
-     *  计数（小意思）
+     * 计数（小意思）
      */
     public static int N_Number(String s) {
         Stack<Character> stack1 = new Stack<>();

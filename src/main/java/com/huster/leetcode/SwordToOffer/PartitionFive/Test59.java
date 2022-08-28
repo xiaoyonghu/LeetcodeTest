@@ -29,5 +29,6 @@ public class Test59 {
     }
 
     public static void main(String[] args) {
+
     }
 }

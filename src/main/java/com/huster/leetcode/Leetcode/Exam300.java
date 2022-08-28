@@ -22,14 +22,14 @@ public class Exam300 {
             dp[i] = 1;
         }
 
-        for (int i = 1; i < nums.length ; i++) {
+        for (int i = 1; i < nums.length; i++) {
             // dp[i] = Max(dp[j])+1 j--> 0 - i-1
-            for (int j = 0; j < i ; j++) {
+            for (int j = 0; j < i; j++) {
                 if (nums[i] > nums[j])
-                    dp[i] = Math.max(dp[i],dp[j]+1);
+                    dp[i] = Math.max(dp[i], dp[j] + 1);
             }
             if (dp[i] > maxLength)
-                maxLength=dp[i];
+                maxLength = dp[i];
         }
         return maxLength;
     }
@@ -57,6 +57,7 @@ public class Exam300 {
 
     /**
      * 使用Java的内置函数
+     *
      * @param nums
      * @return
      */
@@ -65,16 +66,16 @@ public class Exam300 {
         int len = 0;
         for (int x : nums) {
             int i = Arrays.binarySearch(tails, 0, len, x);
-            if (i< 0)
-                i = -(i+1);
-            tails[i] =x;
+            if (i < 0)
+                i = -(i + 1);
+            tails[i] = x;
             if (i == len) ++len;
         }
         return len;
     }
 
     public static void main(String[] args) {
-        int[] arr ={10,9,2,5,3,7,101,18};
+        int[] arr = {10, 9, 2, 5, 3, 7, 101, 18};
 
         Exam300 exam300 = new Exam300();
         System.out.println(exam300.lengthOfLIS1(arr));

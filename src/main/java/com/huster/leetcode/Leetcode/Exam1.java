@@ -12,15 +12,15 @@ public class Exam1 {
     //使用空间换时间
     //时间复杂度O(N)  空间复杂度O（N）
     public int[] twoSum(int[] nums, int target) {
-        HashMap<Integer,Integer> map=new HashMap<>();
+        HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i],i);
+            map.put(nums[i], i);
         }
         for (int i = 0; i < nums.length; i++) {
             int other = target - nums[i];
-            if (map.containsKey(other)&& map.get(other)!=i)
-                return new int[]{i,map.get(other)};
+            if (map.containsKey(other) && map.get(other) != i)
+                return new int[]{i, map.get(other)};
         }
-        return new int[]{-1,-1};
+        return new int[]{-1, -1};
     }
 }

@@ -26,7 +26,7 @@ public class Exam207 {
         }
 
         //Get the indegree and adjacency of every course.
-        for (int[] p:prerequisites){
+        for (int[] p : prerequisites) {
             indegress[p[0]]++;// 0所对应的是后续节点
             adjacency.get(p[1]).add(p[0]);//1对应前去节点
         }
@@ -40,7 +40,7 @@ public class Exam207 {
         //BFS
         //1、判断while
         //时间复杂度为O(N*M) N为节点数 M为边数
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             //2、出队
             int pre = queue.poll();
 
@@ -48,7 +48,7 @@ public class Exam207 {
             numCourses--;
 
             //4、generated node
-            for (int next : adjacency.get(pre)){
+            for (int next : adjacency.get(pre)) {
                 if ((--indegress[next]) == 0)
                     //5、把相关的节点放入queue里面
                     queue.add(next);
@@ -63,13 +63,13 @@ public class Exam207 {
         for (int i = 0; i < numCourses; i++) {
             adjacency.add(new ArrayList<>());
         }
-        int[] flags=new int[numCourses];//默认初始化值为0
-        for (int[] p : prerequisites){
+        int[] flags = new int[numCourses];//默认初始化值为0
+        for (int[] p : prerequisites) {
             adjacency.get(p[1]).add(p[0]);
         }
 
         for (int i = 0; i < numCourses; i++) {
-            if(!dfs(adjacency,flags,i)) return false;
+            if (!dfs(adjacency, flags, i)) return false;
         }
         return true;
     }
@@ -82,7 +82,7 @@ public class Exam207 {
         flags[i] = 1;  //本轮访问的节点标记的状态值
         //3、递归到下一层
         for (int p : adjacency.get(i))
-            if (!dfs(adjacency,flags,p)) return false;
+            if (!dfs(adjacency, flags, p)) return false;
         //4、恢复当前节点的状态
         flags[i] = -1;  //结束以i节点的本轮的访问
         return true;

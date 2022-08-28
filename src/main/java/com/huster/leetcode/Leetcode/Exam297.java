@@ -16,14 +16,14 @@ import java.util.LinkedList;
 public class Exam297 {
     private static final String spliter = ",";
     private static final String NN = "X";
-    
+
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         /**
          * 先序遍历
          */
         StringBuilder sb = new StringBuilder();
-        serialize(root,sb);
+        serialize(root, sb);
         return sb.toString();
     }
 
@@ -32,8 +32,8 @@ public class Exam297 {
             sb.append(NN).append(spliter);
         else {
             sb.append(cur.val).append(spliter);
-            serialize(cur.left,sb);
-            serialize(cur.right,sb);
+            serialize(cur.left, sb);
+            serialize(cur.right, sb);
         }
     }
 

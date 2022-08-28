@@ -98,6 +98,7 @@ public class Exam200 {
             }
         }
     }
+
     public static void main(String[] args) {
         char[][] grid = {
                 {'1', '1', '1', '1', '0'},

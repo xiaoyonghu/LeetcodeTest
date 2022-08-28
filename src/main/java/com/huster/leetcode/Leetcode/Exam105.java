@@ -16,7 +16,7 @@ public class Exam105 {
         for (int i = 0; i < inorder.length; i++) {
             index.put(inorder[i], i);
         }
-        return  buildTree(preorder, 0, preorder.length - 1, inorder, 0, inorder.length-1, index);
+        return buildTree(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1, index);
     }
 
     private TreeNode buildTree(int[] preOrder, int preStart, int preEnd, int[] inOrder, int inStart, int inEnd, HashMap<Integer, Integer> index) {

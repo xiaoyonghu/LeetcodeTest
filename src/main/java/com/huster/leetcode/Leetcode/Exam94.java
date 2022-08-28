@@ -14,21 +14,22 @@ import java.util.Stack;
  */
 public class Exam94 {
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> list =new ArrayList<>();
-        inorderTraversal(root,list);
+        List<Integer> list = new ArrayList<>();
+        inorderTraversal(root, list);
         return list;
     }
 
     /**
      * 二叉树遍历的模板方法
+     *
      * @param root
      * @param list
      */
     private void inorderTraversal(TreeNode root, List<Integer> list) {
-        if (root!= null){
-            inorderTraversal(root.left,list);
+        if (root != null) {
+            inorderTraversal(root.left, list);
             list.add(root.val);
-            inorderTraversal(root.right,list);
+            inorderTraversal(root.right, list);
         }
     }
 
@@ -36,12 +37,12 @@ public class Exam94 {
      * 采用栈的方式
      */
     public List<Integer> inorderTraversal1(TreeNode root) {
-        List<Integer> list =new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
 
         TreeNode cur = root;
-        while (cur !=null || !stack.isEmpty()){
-            while (cur != null){
+        while (cur != null || !stack.isEmpty()) {
+            while (cur != null) {
                 stack.push(cur);
                 //把此节点的左边左边节点都放进去
                 cur = cur.left;

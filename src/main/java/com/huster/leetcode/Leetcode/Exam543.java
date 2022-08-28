@@ -10,10 +10,12 @@ import com.huster.leetcode.utils.TreeNode;
  */
 public class Exam543 {
     int maxRes;
+
     public int diameterOfBinaryTree(TreeNode root) {
         dp(root);
         return maxRes;
     }
+
     //典型的后序遍历
     int dp(TreeNode root) {
         if (root == null)

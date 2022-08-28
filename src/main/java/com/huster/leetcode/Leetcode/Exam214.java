@@ -79,49 +79,50 @@ public class Exam214 {
      * 解法一：原始字符串先逆序，然后截取逆序后的前i个字符拼接到原串上，取满足回文条件最小的i
      */
     public String shortestPalindrome1(String s) {
-        int n =s.length();
+        int n = s.length();
         if (n == 0)
             return "";
-        if (n ==1)
+        if (n == 1)
             return s;
-        if (isHuiWen(s)){
+        if (isHuiWen(s)) {
             return s;
         }
-        char[] c=s.toCharArray();
-        char[] rev=new char[n];
-        for (int i = 0,j=n-1; i < n; i++,j--) {
+        char[] c = s.toCharArray();
+        char[] rev = new char[n];
+        for (int i = 0, j = n - 1; i < n; i++, j--) {
             rev[i] = c[j];
         }
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
             sb.append(rev[i]);
         }
-        String resS=sb.toString();
+        String resS = sb.toString();
 
-        int min=Integer.MAX_VALUE;
+        int min = Integer.MAX_VALUE;
         boolean huiWen;
         String pingJie;
 
         for (int i = 0; i < n; i++) {
-            String si=resS.substring(0,i+1);
-            pingJie = si+s;
+            String si = resS.substring(0, i + 1);
+            pingJie = si + s;
             huiWen = isHuiWen(pingJie);
-            if (huiWen && (min>i+1)){
-                min=i+1;
+            if (huiWen && (min > i + 1)) {
+                min = i + 1;
             }
         }
-        return resS.substring(0,min)+s;
+        return resS.substring(0, min) + s;
     }
-    public boolean isHuiWen(String s){
-        boolean flag=true;
-        int left=0;
-        int right = s.length()-1;
-        while(left<=right){
-            if (s.charAt(left)==s.charAt(right)){
+
+    public boolean isHuiWen(String s) {
+        boolean flag = true;
+        int left = 0;
+        int right = s.length() - 1;
+        while (left <= right) {
+            if (s.charAt(left) == s.charAt(right)) {
                 left++;
                 right--;
-            }else {
-                flag=false;
+            } else {
+                flag = false;
                 break;
             }
         }

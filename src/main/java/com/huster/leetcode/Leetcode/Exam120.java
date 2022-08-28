@@ -12,19 +12,18 @@ import java.util.List;
  */
 public class Exam120 {
     public int minimumTotal(List<List<Integer>> triangle) {
-        if(triangle.size() == 0 || triangle.get(0).size()==0)
+        if (triangle.size() == 0 || triangle.get(0).size() == 0)
             return 0;
         //定义状态变量,这里让dp的初始值为triangle的最后一行
-        for (int i = triangle.size()-2; i >=0; i--) {
-            for (int j = triangle.get(i).size()-1; j >=0; j--) {
+        for (int i = triangle.size() - 2; i >= 0; i--) {
+            for (int j = triangle.get(i).size() - 1; j >= 0; j--) {
                 //状态转移方程
-                int min = Math.min(triangle.get(i+1).get(j),triangle.get(i+1).get(j+1)) + triangle.get(i).get(j);
-                triangle.get(i).set(j,min);
+                int min = Math.min(triangle.get(i + 1).get(j), triangle.get(i + 1).get(j + 1)) + triangle.get(i).get(j);
+                triangle.get(i).set(j, min);
             }
         }
         return triangle.get(0).get(0);
     }
-
 
 
     public static void main(String[] args) {

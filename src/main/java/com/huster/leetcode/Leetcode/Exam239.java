@@ -16,32 +16,32 @@ import java.util.Scanner;
 public class Exam239 {
     int[] result;
     ArrayDeque<Integer> deq = new ArrayDeque<>();
-    public  int[] maxSlidingWindow(int[] nums, int k) {
-        int n= nums.length;
-        if (n==0)
+
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        int n = nums.length;
+        if (n == 0)
             return new int[0];
-        if (k==1)
+        if (k == 1)
             return nums;
         result = new int[n - k + 1];
 
         for (int i = 0; i < n; i++) {
             //we only pop out one out of range element in one round at most
             // remove numbers out of range k
-            if (!deq.isEmpty() && deq.getFirst() <= (i-k)){
+            if (!deq.isEmpty() && deq.getFirst() <= (i - k)) {
                 deq.removeFirst();
             }
             // remove smaller numbers in k range as they are useless
-            while (!deq.isEmpty() && nums[deq.getLast()] < nums[i]){
+            while (!deq.isEmpty() && nums[deq.getLast()] < nums[i]) {
                 deq.removeLast();
             }
             //deq contains index... result contains content
             deq.addLast(i);
-            if (i >=  k -1)  //判断滑动窗口是否已经有K个了
-                result[i - k + 1] =nums[deq.getFirst()];
+            if (i >= k - 1)  //判断滑动窗口是否已经有K个了
+                result[i - k + 1] = nums[deq.getFirst()];
         }
         return result;
     }
-
 
 
     public static void main(String[] args) {

@@ -9,6 +9,7 @@ import com.huster.leetcode.utils.TreeNode;
  * Status:finished
  */
 public class Exam617 {
+
     //将t2合并到t1上去
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
         if (t1 == null)

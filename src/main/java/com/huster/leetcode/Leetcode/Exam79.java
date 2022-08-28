@@ -49,16 +49,16 @@ public class Exam79 {
     }
 
     public static void main(String[] args) {
-        char[][] board ={
-                {'A','B','C','E'},
-                {'S','F','C','S'},
-                {'A','D','E','E'},
+        char[][] board = {
+                {'A', 'B', 'C', 'E'},
+                {'S', 'F', 'C', 'S'},
+                {'A', 'D', 'E', 'E'},
         };
         Exam79 exam79 = new Exam79();
         String s = "SEE";
         long startTime = System.currentTimeMillis();
-        System.out.println(exam79.exist(board,s));
-        long endTime =System.currentTimeMillis();
-        System.out.println("运行时间为"+ (endTime-startTime));
+        System.out.println(exam79.exist(board, s));
+        long endTime = System.currentTimeMillis();
+        System.out.println("运行时间为" + (endTime - startTime));
     }
 }

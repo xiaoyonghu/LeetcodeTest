@@ -70,26 +70,26 @@ public class Exam491 {
 
     //解法二：采用递归，看的我吐了
     public List<List<Integer>> findSubsequences1(int[] nums) {
-        dfs(0,Integer.MIN_VALUE,nums);
+        dfs(0, Integer.MIN_VALUE, nums);
         return res;
     }
 
     private void dfs(int cur, int last, int[] nums) {
         //结束条件
-        if (cur == nums.length){
-            if (temp.size()>=2){
+        if (cur == nums.length) {
+            if (temp.size() >= 2) {
                 res.add(new ArrayList<>(temp));
             }
             return;
         }
 
-        if (nums[cur]>=last){
+        if (nums[cur] >= last) {
             temp.add(nums[cur]);
-            dfs(cur+1,nums[cur],nums);//选择当前元素
-            temp.remove(temp.size()-1);
+            dfs(cur + 1, nums[cur], nums);//选择当前元素
+            temp.remove(temp.size() - 1);
         }
-        if (nums[cur]!= last){
-            dfs(cur+1,last,nums);//放弃选择
+        if (nums[cur] != last) {
+            dfs(cur + 1, last, nums);//放弃选择
         }
     }
 

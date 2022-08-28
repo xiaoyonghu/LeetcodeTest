@@ -21,8 +21,8 @@ public class Exam236 {
         //如果左边不存在，那么就是右节点；如果右边不存在，那么就是左节点；
         // 如果左右都存在，那就是根节点
         //return left == null ? right : right == null ? left : root;
-        if(left == null) return right;
-        if(right == null) return left;
+        if (left == null) return right;
+        if (right == null) return left;
         return root;
     }
 }
