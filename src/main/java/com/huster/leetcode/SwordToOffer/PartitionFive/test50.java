@@ -1,4 +1,4 @@
-package com.huster.leetcode.SwordToOffer.PartitionFour;
+package com.huster.leetcode.SwordToOffer.PartitionFive;
 
 import java.util.HashMap;
 import java.util.Scanner;
