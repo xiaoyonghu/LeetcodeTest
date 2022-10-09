@@ -22,7 +22,7 @@ public class Test27 {
 //        return root;
 //    }
 
-    //从上换到下
+    //从上换到下(先序遍历)
 //    public TreeNode mirrorTree(TreeNode root) {
 //
 //        if (root == null) return null;
