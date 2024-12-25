@@ -9,6 +9,7 @@ import java.util.Set;
  * @version 1.0
  * @date 2024/12/25 20:12
  * @Desc 最长连续序列  题目要求使用O（N）
+ * @Yype: set
  */
 public class LC128 {
 
