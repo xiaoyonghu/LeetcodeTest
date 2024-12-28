@@ -23,11 +23,11 @@ public class LC042 {
         int leftMax = 0, rightMax = 0;
 
         while (l < r) {
-            if (height[l] < height[r]) {
-                if (height[l] > leftMax) {
-                    leftMax = height[l];
+            if (height[l] < height[r]) { // 右边栏最大，锁定右边
+                if (height[l] > leftMax) { // 如果大于右边最大值
+                    leftMax = height[l];  // 更新即可
                 } else {
-                    sum += (leftMax - height[l]);
+                    sum += (leftMax - height[l]); // 此时接住雨水
                 }
                 l++;
             } else {
