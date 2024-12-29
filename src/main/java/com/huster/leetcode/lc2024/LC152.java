@@ -4,7 +4,7 @@ package com.huster.leetcode.lc2024;
  * @author Syong
  * @version 1.0
  * @date 2024/12/29 21:16
- * @Desc 乘积最大子数组
+ * @Desc 乘积最大子数组 DP
  */
 public class LC152 {
     public static void main(String[] args) {
