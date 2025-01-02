@@ -60,7 +60,7 @@ public class LC139 {
             set.add(wordDict.get(i));
         }
 
-        // dp[i]表示[0-i]是可以由wordDict拼接出来
+        // dp[i]表示[0-i-1]是可以由wordDict拼接出来
         boolean[] dp = new boolean[s.length() + 1];
         dp[0] = true;
 
