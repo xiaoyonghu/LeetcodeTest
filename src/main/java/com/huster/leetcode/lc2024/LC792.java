@@ -6,7 +6,6 @@ package com.huster.leetcode.lc2024;
  * @date 2025/1/9 22:08
  * @Desc 匹配子序列的单词数
  */
-@Deprecated
 public class LC792 {
     public static void main(String[] args) {
         //s = "abcde", words = ["a","bb","acd","ace"]
