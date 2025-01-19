@@ -21,7 +21,7 @@ public class DP41 {
      */
     int knapsack(int W, int N, int[] wt, int[] val) {
         // 1、dp定义
-        // dp[i][w]表示在前i个物品下，背包容量为w的情况下，能装的最大价值（w体积不一定满了）
+        // dp[i][w]表示在前i个[0,i]物品下，背包容量为w的情况下，能装的最大价值（w体积不一定满了）
         int[][] dp = new int[N + 1][W + 1];
 
         // 2、初始化
