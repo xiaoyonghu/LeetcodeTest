@@ -23,6 +23,7 @@ public class LC234 {
 
     }
 
+    // TODO:使用快慢指针
     // 使用最简单的办法：先遍历一遍，然后使用2个指正
     public boolean isPalindrome(ListNode head) {
         ListNode cur = head;
