@@ -1,106 +1,70 @@
 package com.huster.leetcode.lc2024;
 
-import java.util.ArrayDeque;
-import java.util.Queue;
-
 /**
  * @author Syong
  * @version 1.0
- * @date 2024/12/25 21:09
- * @Desc 移动零
- * @Type 双指针
+ * @date 2025/2/6 21:28
+ * @Desc 除自身以外数组的乘积
+ * 规则：请不要使用除法，且在 O(n) 时间复杂度内完成此题。
  */
 public class LC238 {
     public static void main(String[] args) {
-//        int[] nums = new int[]{0, 1, 0, 3, 12};
-        int[] nums = new int[]{2, 1};
-        // [1,3,12,0,0]
-
-        // 1 0 0 3 12
-        // 1 3 0 0 12
-        // 1 3 12 0 0
-
-        moveZeroes(nums);
-        for (int i = 0; i < nums.length; i++) {
-            System.out.println(nums[i]+ " ");
+//        int[] nums = {1, 2, 3, 4};
+        int[] nums = {-1, 1, 0, -3, 3};
+        // 24,12,8,6
+        // 1、思路：先乘以总的，然后对每个进行除以即可（如果有0就不行，这种思路就不行）
+        // 2、不能除的话，使用异或，相当于除以了(不行)
+        // 3、参看题解：前缀和后缀之积
+        LC238 lc238 = new LC238();
+        int[] result = lc238.productExceptSelf(nums);
+        for (int i = 0; i < result.length; i++) {
+            System.out.print(result[i] + " -> ");
         }
+
+//        int totalSum = 1;
+//        for (int i = 0; i < nums.length; i++) {
+//            totalSum *= nums[i];
+//        }
+//        System.out.println(totalSum);
+//        System.out.println(totalSum ^ (~nums[1]));
+
     }
 
-    /**
-     * @Description using queue
-     **/
-    public static void moveZeroesUsingQueue(int[] nums) {
-        //1、使用队列或者栈 TimeConsume O(N) SpaceConsume O(N)
-        Queue<Integer> que = new ArrayDeque<>();
+    // 参看题解了的，但是了解了另外一种对于K系列问题的解法
+    public int[] productExceptSelf(int[] nums) {
+        // 使用前缀和后缀之积
+        // int[] nums = {1, 2, 3, 4};
+        // 前缀积 prefix = [1, 1, 2, 6]
+        // 后缀积 suffix = [24, 12, 4, 1]
+        // 乘积 [24, 12, 8, 6]
         int len = nums.length;
-        int addSize = 0;
+        int[] prefix = new int[len];
+        int[] suffix = new int[len];
+        int[] result = new int[len];
+        int preSum = 1, sufSum = 1;
+        // 使用3次for循环
+        // 填充preSum
         for (int i = 0; i < len; i++) {
-            if (nums[i] != 0) {
-                que.add(nums[i]);
-                addSize++;
-            }
-        }
-
-        for (int i = 0; i < len; i++) {
-            if (i >= addSize) {
-                nums[i] = 0;
+            if (i == 0) {
+                prefix[i] = 1;
             } else {
-                nums[i] = que.poll();
+                preSum *= nums[i - 1];
+                prefix[i] = preSum;
             }
         }
-    }
-    /**
-     * @Description 使用双指针（写的不行）
-     **/
-    public static void moveZeroesDoublePoint(int[] nums) {
-        // int[] nums = new int[]{0, 1, 0, 3, 12};
-        // 1 0 0 3 12
-        // 1 3 0 0 12 0 0 0
-        // 1 3 12 0 0
-        int len = nums.length;
-        if (len == 1) return;
-        int l = len;
-        for (int i = 0; i < len; i++) { // l表示第一个0下标
-            if (nums[i] == 0) {
-                l = i;
-                break;
+        // 填充sufSum
+        for (int i = len - 1; i >= 0; i--) {
+            if (i == len - 1) {
+                suffix[i] = 1;
+            } else {
+                sufSum *= nums[i + 1];
+                suffix[i] = sufSum;
             }
         }
-        int r = l + 1;
-        while (r < len) {   // r表示第一个非0下标
-            if (nums[r] != 0) break;
-            r++;
+        // 填充result
+        for (int i = 0; i < len; i++) {
+            result[i] = prefix[i] * suffix[i];
         }
-
-        while (r < len) {
-            if (nums[l] == 0 && nums[r] != 0) {
-                swapValue(l, r, nums);
-                l++;
-                while (r < len && nums[r] == 0) r++;
-            }
-        }
-
+        return result;
     }
-
-    // 最漂亮的写法
-    public static void moveZeroes(int[] nums) {
-        // int[] nums = new int[]{0, 1, 0, 3, 12};
-        // 1 0 0 3 12
-        // 1 3 0 0 12 0 0 0
-        // 1 3 12 0 0
-        int len = nums.length;
-        for (int l = 0, r = 0; r < len; r++) {
-            if (nums[r] != 0) {
-                swapValue(l, r, nums);
-                l++;
-            }
-        }
-    }
-
-    public static void swapValue(int i,int j,int[] nums){
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
-    }
-
 }
